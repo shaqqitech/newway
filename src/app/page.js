@@ -1,5 +1,6 @@
 "use client";
 import Main from "@/components/Main";
+import Work from "@/components/Work";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <main className="w-screen">
       <Main />
+      <Work />
     </main>
   );
 }
