@@ -33,7 +33,7 @@ const Facilities = () => {
         {/* Left Box */}
         <div className="w-full lg:flex-1 hidden lg:flex justify-center items-center">
           <div
-            className="w-full h-full mx-24 my-40 relative"
+            className="w-full h-full flex justify-center items-center relative"
             data-aos="fade-up"
             data-aos-duration="400"
           >

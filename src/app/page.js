@@ -1,6 +1,8 @@
 "use client";
 import Facilities from "@/components/Facilities";
+import Feedback from "@/components/Feedback";
 import Main from "@/components/Main";
+import ThankYou from "@/components/ThankYou";
 import Work from "@/components/Work";
 import Aos from "aos";
 import 'aos/dist/aos.css';
@@ -20,6 +22,8 @@ export default function Home() {
       <Main />
       <Work />
       <Facilities />
+      <Feedback />
+      <ThankYou />
     </main>
   );
 }
