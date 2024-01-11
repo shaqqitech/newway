@@ -1,4 +1,5 @@
 "use client";
+import Facilities from "@/components/Facilities";
 import Main from "@/components/Main";
 import Work from "@/components/Work";
 import Aos from "aos";
@@ -18,6 +19,7 @@ export default function Home() {
     <main className="w-screen">
       <Main />
       <Work />
+      <Facilities />
     </main>
   );
 }
