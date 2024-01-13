@@ -51,7 +51,7 @@ const Facilities = () => {
               >
                 <div
                   className="w-4/5 h-4/5 relative"
-                  data-aos="fade-up"
+                  data-aos="fade-left"
                   data-aos-duration="400"
                 >
                   <Image src={item.img} alt="Work image" fill />

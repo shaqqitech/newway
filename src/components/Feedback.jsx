@@ -15,7 +15,7 @@ const Feedback = () => {
           >
             <div className="w-full h-full flex justify-center items-center relative">
               <Image
-                src="/feedback.jpg"
+                src="/feedback.png"
                 alt="Work image"
                 width={500}
                 height={1}
