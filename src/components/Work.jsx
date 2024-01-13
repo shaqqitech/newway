@@ -29,7 +29,7 @@ const Work = () => {
   return (
     <main className="w-full px-10 pb-20 flex flex-col space-y-8 justify-center items-center overflow-hidden">
       <h1 className="font-bold text-4xl">Work Style</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 dark:text-black">
         {data.map((item) => (
           <div
             className={`w-52 h-80 rounded-xl  ${item.bg} p-5 flex flex-col space-y-4`}

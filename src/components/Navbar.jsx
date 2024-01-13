@@ -1,4 +1,5 @@
 "use client";
+import ThemeChanger from "@/app/ThemeChanger";
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -16,7 +17,8 @@ const Navbar = () => {
       <div className="md:hidden flex justify-between w-full items-center">
         <Link href={'/'} className="font-bold text-2xl">NewWay</Link>
         {/* Hamburger/Cross icon */}
-        <div className="flex items-center">
+        <div className="flex space-x-4 justify-center items-center">
+          <span><ThemeChanger /></span>
           {showMenu ? (
             <FaTimes
               onClick={toggleMenu}
@@ -50,9 +52,13 @@ const Navbar = () => {
           <Link href={'/feedback'}>Feedback</Link>
         </div>
         {/* Sign In button */}
+        <div className="flex space-x-4 justify-center items-center">  
+
+        <span><ThemeChanger /></span>
         <Link href={'/signin'} className="bg-blue-500 hover:bg-blue-700 text-white px-3 py-1 rounded-full">
           Sign In
         </Link>
+        </div>
       </div>
     </nav>
   );
