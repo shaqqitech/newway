@@ -37,7 +37,7 @@ const Facilities = () => {
             data-aos="fade-up"
             data-aos-duration="400"
           >
-            <Image src="/benefits/fc.png" alt="Work image" fill />
+            <Image src="/benefits/fc.png" alt="Work image" fill sizes="100%" />
           </div>
         </div>
 
@@ -54,7 +54,7 @@ const Facilities = () => {
                   data-aos="fade-left"
                   data-aos-duration="400"
                 >
-                  <Image src={item.img} alt="Work image" fill />
+                  <Image src={item.img} alt="Work image" fill sizes="100%" />
                 </div>
 
                 <h1

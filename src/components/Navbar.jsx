@@ -33,7 +33,7 @@ const Navbar = () => {
         </div>
         {/* Dropdown menu */}
         {showMenu && (
-          <div className="md:hidden absolute top-12 left-0 right-0 bg-white text-black dark:bg-[#1a202c] dark:text-white z-10 p-4 shadow-md space-y-2">
+          <div className="md:hidden absolute top-12 left-0 right-0 dark:bg-[#1a202c] dark:text-white z-10 p-4 shadow-md space-y-2">
             <Link href={'/about'} className="block mb-3">About</Link>
             <Link href={'/contact'} className="block mb-3">Contact</Link>
             <Link href={'/feedback'} className="block">Feedback</Link>

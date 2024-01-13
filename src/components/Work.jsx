@@ -40,7 +40,7 @@ const Work = () => {
               data-aos="fade-up"
               data-aos-duration="400"
             >
-              <Image src={item.img} alt="Work image" fill />
+              <Image src={item.img} alt="Work image" fill sizes="100%" />
             </div>
             <div className={`w-full space-y-2 flex flex-col`} data-aos="fade-up"  data-aos-duration="500">
               <h1 className="text-center font-semibold text-lg">
