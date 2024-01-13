@@ -7,7 +7,6 @@ import Work from "@/components/Work";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-import ThemeChanger from "./ThemeChanger";
 
 export default function Home() {
   useEffect(() => {
@@ -19,13 +18,12 @@ export default function Home() {
     });
   }, []);
   return (
-    <main className="w-screen">
+    <main className="max-w-screen">
       <Main />
       <Work />
       <Facilities />
       <Feedback />
       <ThankYou />
-      {/* <ThemeChanger /> */}
     </main>
   );
 }
