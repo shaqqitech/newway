@@ -1,24 +1,23 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
 const SignUp = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        password: '',
-      });
-    
-      const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-      };
-    
-      const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Form submitted with data:', formData);
-      };
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
 
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted with data:", formData);
+  };
 
   return (
     <main className="w-full min-h-screen flex justify-center items-center px-10 pb-24 flex-col space-y-8">
@@ -44,73 +43,82 @@ const SignUp = () => {
 
         {/* Feedback Form */}
         <div className="w-full lg:flex-1 flex justify-center items-center">
-            <div className="inputBox p-8 rounded-lg shadow-md max-w-md w-full">
-              <form className="space-y-4" onSubmit={handleSubmit}>
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-gray-600"
-                  >
-                    Full Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="text"
-                    className="inputField mt-1 p-2 w-full border border-gray-300 rounded-md"
-                    placeholder="John Doe"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-gray-600"
-                  >
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="inputField mt-1 p-2 w-full border border-gray-300 rounded-md"
-                    placeholder="john@example.com"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="password"
-                    className="block text-sm font-medium text-gray-600"
-                  >
-                    Password
-                  </label>
-                  <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    className="inputField mt-1 p-2 w-full border border-gray-300 rounded-md"
-                    placeholder="********"
-                    value={formData.password}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div>
-                  <button
-                    type="submit"
-                    className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
-                  >
-                    Sign In
-                  </button>
-                </div>
-              </form>
-              <div className="text-center mt-4">Already have an account? <Link href={'/signin'} className="font-bold text-blue-600">Sign In</Link></div>
+          <div
+            className="inputBox p-8 rounded-lg shadow-md max-w-md w-full"
+            data-aos="fade-left"
+            data-aos-duration="400"
+          >
+            <form className="space-y-4" onSubmit={handleSubmit}>
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-600"
+                >
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="text"
+                  className="inputField mt-1 p-2 w-full border border-gray-300 rounded-md"
+                  placeholder="John Doe"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-600"
+                >
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="inputField mt-1 p-2 w-full border border-gray-300 rounded-md"
+                  placeholder="john@example.com"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="password"
+                  className="block text-sm font-medium text-gray-600"
+                >
+                  Password
+                </label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  className="inputField mt-1 p-2 w-full border border-gray-300 rounded-md"
+                  placeholder="********"
+                  value={formData.password}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
+                >
+                  Sign In
+                </button>
+              </div>
+            </form>
+            <div className="text-center mt-4">
+              Already have an account?{" "}
+              <Link href={"/signin"} className="font-bold text-blue-600">
+                Sign In
+              </Link>
             </div>
+          </div>
         </div>
       </div>
     </main>
