@@ -3,8 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
-const SignIn = () => {
+const SignUp = () => {
     const [formData, setFormData] = useState({
+        name: '',
         email: '',
         password: '',
       });
@@ -21,7 +22,7 @@ const SignIn = () => {
 
   return (
     <main className="w-full min-h-screen flex justify-center items-center px-10 pb-24 flex-col space-y-8">
-      <h1 className="font-bold text-4xl text-center">Sign In</h1>
+      <h1 className="font-bold text-4xl text-center">Sign Up</h1>
       <div className="w-full flex flex-col lg:flex-row space-y-10">
         {/* Left Box */}
         <div className="w-full h-full flex-1 flex justify-center items-center">
@@ -32,9 +33,9 @@ const SignIn = () => {
           >
             <div className="w-full h-full flex justify-center items-center relative">
               <Image
-                src="/signin/signin.png"
+                src="/signin/signup.png"
                 alt="Work image"
-                width={400}
+                width={350}
                 height={1}
               />
             </div>
@@ -45,6 +46,24 @@ const SignIn = () => {
         <div className="w-full lg:flex-1 flex justify-center items-center">
             <div className="inputBox p-8 rounded-lg shadow-md max-w-md w-full">
               <form className="space-y-4" onSubmit={handleSubmit}>
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-600"
+                  >
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="text"
+                    className="inputField mt-1 p-2 w-full border border-gray-300 rounded-md"
+                    placeholder="John Doe"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
                 <div>
                   <label
                     htmlFor="email"
@@ -90,7 +109,7 @@ const SignIn = () => {
                   </button>
                 </div>
               </form>
-              <div className="text-center mt-4">Don't have an account yet? <Link href={'/signup'} className="font-bold text-blue-600">Sign Up</Link></div>
+              <div className="text-center mt-4">Already have an account? <Link href={'/signin'} className="font-bold text-blue-600">Sign In</Link></div>
             </div>
         </div>
       </div>
@@ -98,4 +117,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default SignUp;
