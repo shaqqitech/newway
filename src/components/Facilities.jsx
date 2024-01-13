@@ -31,7 +31,7 @@ const Facilities = () => {
       </h1>
       <div className="w-full flex flex-col lg:flex-row dark:text-black">
         {/* Left Box */}
-        <div className="w-full lg:flex-1 hidden lg:flex justify-center items-center px-16">
+        <div className="w-full lg:flex-1 hidden lg:flex justify-center items-center">
           <div
             className="w-full h-full flex justify-center items-center relative"
             data-aos="fade-up"
