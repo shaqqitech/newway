@@ -2,4 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.inputBox {
+    border-radius: 29px;
+    background: linear-gradient(145deg, #f0f0f0);
+    box-shadow:  5px 5px 18px #afafaf,
+                 -5px -5px 18px #ffffff;
+}
 
+.inputField{
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: inset 5px 5px 10px #d1d1d1,
+                inset -5px -5px 10px #ffffff;
+}

@@ -28,7 +28,7 @@ const Feedback = () => {
         {/* Feedback Form */}
         <div className="w-full lg:flex-1 flex justify-center items-center">
           <div
-            className="w-full max-w-md p-8 bg-gray-100 rounded-md"
+            className="inputBox w-full max-w-md p-8 rounded-md"
             data-aos="fade-left"
             data-aos-duration="400"
           >
@@ -41,7 +41,7 @@ const Feedback = () => {
                 id="feedback"
                 name="feedback"
                 rows="4"
-                className="w-full p-2 mb-4 border rounded-md"
+                className="inputField w-full p-2 mb-4 border rounded-md"
               />
 
               <button

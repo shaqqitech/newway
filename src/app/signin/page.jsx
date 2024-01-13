@@ -42,7 +42,7 @@ const SignIn = () => {
 
         {/* Feedback Form */}
         <div className="w-full lg:flex-1 flex justify-center items-center">
-            <div className="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
+            <div className="inputBox p-8 rounded-lg shadow-md max-w-md w-full">
               <h2 className="text-3xl font-bold mb-6 text-center">Sign In</h2>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
@@ -56,7 +56,7 @@ const SignIn = () => {
                     type="email"
                     id="email"
                     name="email"
-                    className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                    className="inputField mt-1 p-2 w-full border border-gray-300 rounded-md"
                     placeholder="john@example.com"
                     value={formData.email}
                     onChange={handleChange}
@@ -74,7 +74,7 @@ const SignIn = () => {
                     type="password"
                     id="password"
                     name="password"
-                    className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                    className="inputField mt-1 p-2 w-full border border-gray-300 rounded-md"
                     placeholder="********"
                     value={formData.password}
                     onChange={handleChange}

@@ -44,7 +44,7 @@ const ContactUs = () => {
         {/* Feedback Form */}
         <div className="w-full lg:flex-1 flex justify-center items-center">
           <div
-            className="bg-white p-8 rounded-lg shadow-md max-w-md w-full"
+            className="inputBox p-8 rounded-lg shadow-md max-w-md w-full"
             data-aos="fade-left"
             data-aos-duration="400"
           >
@@ -60,7 +60,7 @@ const ContactUs = () => {
                   type="text"
                   id="name"
                   name="name"
-                  className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                  className="inputField mt-1 p-2 w-full border border-gray-300 rounded-md"
                   placeholder="John Doe"
                   value={formData.name}
                   onChange={handleChange}
@@ -78,7 +78,7 @@ const ContactUs = () => {
                   type="email"
                   id="email"
                   name="email"
-                  className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                  className="inputField mt-1 p-2 w-full border border-gray-300 rounded-md"
                   placeholder="john@example.com"
                   value={formData.email}
                   onChange={handleChange}
@@ -96,7 +96,7 @@ const ContactUs = () => {
                   id="message"
                   name="message"
                   rows="4"
-                  className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                  className="inputField mt-1 p-2 w-full border border-gray-300 rounded-md"
                   placeholder="Your message here..."
                   value={formData.message}
                   onChange={handleChange}

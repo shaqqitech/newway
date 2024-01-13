@@ -4,7 +4,7 @@ import React from "react";
 const Facilities = () => {
   const data = [
     {
-      title: "1/2 Lunch Time",
+      title: "1/2H Lunch Time",
       img: "/benefits/fc1.png",
       bg: "bg-red-200",
     },
@@ -31,7 +31,7 @@ const Facilities = () => {
       </h1>
       <div className="w-full flex flex-col lg:flex-row">
         {/* Left Box */}
-        <div className="w-full lg:flex-1 hidden lg:flex justify-center items-center">
+        <div className="w-full lg:flex-1 hidden lg:flex justify-center items-center px-16">
           <div
             className="w-full h-full flex justify-center items-center relative"
             data-aos="fade-up"

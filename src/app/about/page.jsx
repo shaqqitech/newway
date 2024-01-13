@@ -22,7 +22,7 @@ const About = () => {
         {/* Right Box */}
         {/* Feedback Form */}
         <div className="w-full lg:flex-1 flex justify-center items-center">
-          <div className="bg-gray-200 p-8 rounded-md shadow-md max-w-lg mx-auto"             data-aos="fade-left"
+          <div className="inputBox p-8 rounded-md shadow-md max-w-lg mx-auto"             data-aos="fade-left"
             data-aos-duration="400">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>

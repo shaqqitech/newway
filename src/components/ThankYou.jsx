@@ -29,6 +29,8 @@ const ThankYou = () => {
         <div className="w-full lg:flex-1 flex justify-center items-center">
           <div
             className=" flex justify-center items-center lg:items-start flex-col space-y-4"
+            data-aos="fade-left"
+            data-aos-duration="400"
           >
             <h1 className="text-4xl lg:text-6xl font-bold text-center lg:text-start text-yellow-500">
               Don't Waste Your Precious Time.
