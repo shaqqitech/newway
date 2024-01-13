@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Main = () => {
   return (
-    <main className="w-full h-screen flex flex-col justify-center items-center lg:flex-row">
+    <main className="w-full min-h-screen flex flex-col justify-center items-center lg:flex-row">
       <div
         className="w-full lg:w-1/2 h-full flex justify-center lg:items-end items-center flex-col px-10"
         data-aos="fade-up"

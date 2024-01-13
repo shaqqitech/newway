@@ -35,10 +35,10 @@ const ThankYou = () => {
             <h1 className="text-4xl lg:text-6xl font-bold text-center lg:text-start text-yellow-500">
               Don't Waste Your Precious Time.
             </h1>
-            <h2 className="font-semibold text-slate-500 text-3xl lg:text-4xl">
+            <h2 className="font-semibold text-slate-500 text-xl sm:text-2xl lg:text-3xl">
               Join Your New Journey
             </h2>
-            <h3 className="font-semibold text-slate-500 text-3xl lg:text-4xl">
+            <h3 className="font-semibold text-slate-500 text-xl sm:text-2xl lg:text-3xl">
               With Us.
             </h3>
           </div>
