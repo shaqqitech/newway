@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <main className="w-full flex justify-center items-center flex-col space-y-2 px-8 pt-12">
+    <main className="w-full h-4/5 p-8 md:p-12 lg:p-16 flex flex-col space-y-8">
       <h1 className="font-bold text-5xl text-center">Our Little Detail</h1>
       <div className="w-full flex flex-col lg:flex-row space-y-2">
         {/* Left Box */}
@@ -22,8 +22,11 @@ const About = () => {
         {/* Right Box */}
         {/* Feedback Form */}
         <div className="w-full lg:flex-1 flex justify-center items-center">
-          <div className="inputBox p-8 rounded-md shadow-md max-w-lg mx-auto"             data-aos="fade-left"
-            data-aos-duration="400">
+          <div
+            className="inputBox p-8 rounded-md shadow-md max-w-lg mx-auto"
+            data-aos="fade-left"
+            data-aos-duration="400"
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block mb-2 text-sm font-medium text-gray-600">

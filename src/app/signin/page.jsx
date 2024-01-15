@@ -19,7 +19,7 @@ const SignIn = () => {
   };
 
   return (
-    <main className="w-full min-h-screen flex justify-center items-center px-10 pb-24 flex-col space-y-8">
+    <main className="w-full h-4/5 p-8 md:p-12 lg:p-16 flex flex-col space-y-8">
       <h1 className="font-bold text-4xl text-center">Sign In</h1>
       <div className="w-full flex flex-col lg:flex-row space-y-10">
         {/* Left Box */}

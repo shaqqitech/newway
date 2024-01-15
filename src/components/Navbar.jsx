@@ -8,9 +8,11 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
 
   return (
     <nav className="w-full h-16 flex justify-between items-center py-3 md:py-6 px-5 md:px-20">

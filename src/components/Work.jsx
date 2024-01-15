@@ -32,7 +32,7 @@ const Work = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 dark:text-black">
         {data.map((item) => (
           <div
-            className={`w-80 h-52 lg:w-52 lg:h-80 rounded-xl  ${item.bg} p-5 flex flex-row lg:flex-col  justify-center items-center space-y-4`}
+            className={`w-80 h-52 md:w-52 md:h-80 rounded-xl  ${item.bg} p-5 flex flex-row md:flex-col  justify-center items-center space-y-4`}
             key={item.title}
           >
             <div

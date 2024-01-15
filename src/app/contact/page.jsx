@@ -19,7 +19,7 @@ const ContactUs = () => {
   };
 
   return (
-    <main className="w-full flex justify-center items-center flex-col space-y-2 px-8 pt-12">
+    <main className="w-full h-4/5 p-8 md:p-12 lg:p-16 flex flex-col space-y-8">
       <h1 className="font-bold text-5xl text-center">Contact Us</h1>
       <div className="w-full flex flex-col lg:flex-row space-y-2">
         {/* Left Box */}

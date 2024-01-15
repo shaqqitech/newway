@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <main className="w-full min-h-screen flex flex-col justify-center items-center lg:flex-row">
       <div
-        className="w-full lg:w-1/2 h-full flex justify-center lg:items-end items-center flex-col px-10"
+        className="w-full lg:w-1/2 h-full flex justify-end items-center flex-col px-10"
         data-aos="fade-up"
         data-aos-duration="400"
       >
@@ -23,7 +23,7 @@ const Main = () => {
           <button className="bg-blue-500 hover:bg-blue-700 text-white px-4 lg:px-6 py-2 lg:py-3 rounded-full">
             More Details
           </button>
-          <div className="flex flex-col lg:flex-row space-y-2 justify-center lg:justify-start  items-center space-x-4">
+          <div className="flex flex-col lg:flex-row space-y-2 justify-center lg:justify-start items-center space-x-4">
             <input
               type="text"
               className="px-3 py-1 rounded-full ring-2 ring-blue-500 focus:ring-4 outline-none placeholder:text-sm"
@@ -36,14 +36,13 @@ const Main = () => {
         </div>
       </div>
       <div
-        className="w-full lg:w-1/2 p-10 md:p-16 lg:p-24 h-full flex justify-start items-center md:items-start relative"
+        className="w-full lg:w-1/2 p-10 md:p-16 lg:p-24 h-full flex justify-center items-center md:items-start relative"
         data-aos="fade-up"
         data-aos-duration="500"
       >
         <Image
           src={MainPic}
           alt="Home Pic"
-          sizes="100%"
           className="w-full h-full"
         />
       </div>
